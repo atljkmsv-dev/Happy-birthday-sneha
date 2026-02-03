@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Sneha ❤️</title>
+<style>
+body{
+  margin:0;
+  height:100vh;
+  background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:'Segoe UI',sans-serif;
+  overflow:hidden;
+}
+.card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  max-width:420px;
+  text-align:center;
+  box-shadow:0 15px 40px rgba(0,0,0,0.25);
+  z-index:2;
+}
+h1{
+  color:#ff4d6d;
+}
+p{
+  color:#444;
+  font-size:16px;
+  line-height:1.7;
+}
+.from{
+  margin-top:20px;
+  font-weight:bold;
+  color:#ff4d6d;
+}
+button{
+  margin-top:15px;
+  padding:10px 20px;
+  border:none;
+  border-radius:25px;
+  background:#ff4d6d;
+  color:white;
+  font-size:14px;
+  cursor:pointer;
+}
+.heart{
+  position:absolute;
+  font-size:20px;
+  animation:float 6s infinite;
+  opacity:0.8;
+}
+@keyframes float{
+  0%{transform:translateY(100vh);opacity:0;}
+  50%{opacity:1;}
+  100%{transform:translateY(-10vh);opacity:0;}
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h1>🎂 Happy Birthday Sneha ❤️</h1>
+  <p>
+    Tujhe kitna chahne lage hum,<br>
+    ye lafzon mein bayaan karna mushkil hai…<br><br>
+
+    Teri ek muskaan meri saari thakaan mita deti hai,<br>
+    aur tera saath mujhe poora mehsoos karata hai.<br><br>
+
+    Shayad main perfect nahi hoon,<br>
+    par tera hoon — poore dil se.<br><br>
+
+    Tu meri zindagi ka sabse<br>
+    khoobsurat hissa hai.
+  </p>
+
+  <button onclick="window.open('https://www.youtube.com/watch?v=AgX2II9si7w')">
+    ▶️ Play Tujhe Kitna Chahne Lage
+  </button>
+
+  <div class="from">— Rahul 💖</div>
+</div>
+
+<script>
+for(let i=0;i<25;i++){
+  let h=document.createElement("div");
+  h.className="heart";
+  h.innerHTML="💗";
+  h.style.left=Math.random()*100+"vw";
+  h.style.animationDelay=Math.random()*5+"s";
+  h.style.fontSize=(Math.random()*20+15)+"px";
+  document.body.appendChild(h);
+}
+</script>
+
+</body>
+</html>
